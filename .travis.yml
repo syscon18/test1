@@ -1,5 +1,8 @@
-sudo: required
-dist: bionic
+  language: ruby
+  os: linux
+  dist: bionic
+  sudo: true
+  script:
+          bash -xve ~/catkin_ws/src/pimouse_ros/travis_prepare_dummy_file.bash"
+  
 
-script:
-  - bash -xve ~/catkin_ws/src/pimouse_ros/travis_prepare_dummy_file.bash
